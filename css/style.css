@@ -330,8 +330,14 @@ body#index {
 .column-2 {
     flex: 2;
 }
+.column-3 {
+    flex: 3;
+}
 .column-4 {
     flex: 4;
+}
+.column-5 {
+    flex: 5;
 }
 .column-6 {
     flex: 6;
@@ -341,11 +347,14 @@ body#index {
     border-bottom: 1px solid #d8e0e7;
 }
 div.row-container {
-    border: none;
+    border: none !important;
+}
+.no-border-bottom {
+    border-bottom: none !important;
 }
 div.row-distribute {
     display: flex;
-    border: none;
+    border: none !important;
 }
 .row-distribute > div {
     flex: 1;
@@ -355,7 +364,7 @@ div.row-distribute {
 }
 div.column-distribute {
     display: flex;
-    border: none;
+    border: none !important;
     flex-direction: column;
 }
 .column-distribute > div {
@@ -368,6 +377,7 @@ div.column-distribute {
     height: 15px;
     width: 15px;
     border: 1px solid #d8e0e7;
+    margin: 0 4px;
 }
 .content-row img {
     height: 19px;
@@ -408,4 +418,30 @@ div.column-distribute {
 }
 .content-data {
     margin-bottom: 10px;
+}
+
+/* Odds Comp */
+.odds-light-blue-background {
+    background-color: #E0E9F6;
+}
+#odds-comp .content-row div {
+    border-right: 1px solid #C6C6C6;
+    border-bottom: 1px solid #C6C6C6;
+}
+.up {
+    background: url('../static/over-under/up.png') no-repeat 55px 4px;
+}
+.down {
+    background: url('../static/over-under/down.png') no-repeat 55px 4px;
+}
+#odds-comp .content-data a {
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-left: 5px;
+    background-color: #2798f9;
+    color: #FFF;
+}
+#odds-comp .content-row img {
+    height: 9px;
+    margin: 0 5px;
 }
