@@ -7,10 +7,12 @@
         <meta name="description" content="Football/Soccer Match Livescore | Fixtures | Results" data-rdm="true">
         <link rel="icon" type="image/ico" href="favicon.ico" />
 
+        <!-- Vendor -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Style -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-    <body>
+    <body id='index'>
         <section>
             <header>
                 <div class="header-top">
@@ -19,7 +21,7 @@
                 </div>
                 <div class="header-link">
                     <a>Tips</a>
-                    <a class="current">Soccer</a>
+                    <a href="views/detail.html" class="current">Soccer</a>
                     <a>Basketball</a>
                     <a>Tennis</a>
                     <a>Football</a>
@@ -27,7 +29,7 @@
                     <a>Snooker</a>
                     <a>Free App</a>
                 </div>
-                <div class="header-bottom">
+                <div class="header-bottom dark-red-hover">
                     <a>Mobile</a> |
                     <a class="current">Livescore</a> |
                     <a> Odds Comparison</a> |
@@ -39,6 +41,186 @@
                     <a>Database</a> |
                 </div>
             </header>
+            <div id="main">
+                <div id="main-left">
+                    <div class="table-head dark-red-hover">
+                        <a>Hot Leagues</a>
+                    </div>
+                    <div class="main-left-content">
+                        <a>
+                            <span>
+                                <img src="static/logo/team/arg-d1.jpg" alt="arg-d1">
+                                ARG DL
+                            </span>
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                        <a>
+                            <span>
+                                <img src="static/logo/team/bel-d1.jpg" alt="bel-d1">
+                                BEL DL
+                            </span>
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                        <a>
+                            <span>
+                                <img src="static/logo/team/fin-d1.jpg" alt="fin-d1">
+                                FIN DL
+                            </span>
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                        <a>
+                            <span>
+                                <img src="static/logo/team/por-d1.png" alt="por-d1">
+                                POR DL
+                            </span>
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="main-center">
+                    <div class="content-nav">
+                        <a>Leagues</a>
+                        <a>Country</a>
+                        <a>Score&Odds 2in1</a>
+                        <a>Show All</a>
+                        <a>Simplify</a>
+                        <a>By league</a>
+                        <a>My Games (<b class="red">0</b>)</a>
+                    </div>
+                    <div>
+                        <div class="content-head">
+                            <div class="column-0"></div>
+                            <div class="column-league">League</div>
+                            <div class="column-time">Time</div>
+                            <div class="column-status">Status</div>
+                            <div class="column-home">Home</div>
+                            <div class="column-score">Score</div>
+                            <div class="column-away">Away</div>
+                            <div class="column-cht">C/H-T</div>
+                            <div class="column-data">Data</div>
+                        </div>
+                        <div class="content-row center">
+                            <div class="column-0">
+                                <img src="static/icon/control/top.gif" alt="top">
+                                <img src="static/icon/control/plus.gif" alt="plus">
+                            </div>
+                            <div class="column-league center">RUS PR</div>
+                            <div class="column-time">22:59</div>
+                            <div class="column-status">FT</div>
+                            <div class="column-home">
+                                <img src="static/icon/number/red-1.gif" alt="red-1">
+                                FC Kransdar
+                            </div>
+                            <div class="column-score"><b class="red">1-1</b></div>
+                            <div class="column-away">
+                                Gazovik Orenburg 
+                                <img src="static/icon/number/yellow-1.gif" alt="yellow-1">
+                            </div>
+                            <div class="column-cht">
+                                <div>12-1</div>
+                                <div class="red">1-1</div>
+                            </div>
+                            <div class="column-data">
+                                <img src="static/icon/data-tab/1-2-odds.gif" alt="1-2-odds">
+                                <img src="static/icon/data-tab/3-in-1-odds.png" alt="3-in-1-odds">
+                                <img src="static/icon/data-tab/analyze.gif" alt="analyze">
+                                <img src="static/icon/data-tab/crown-life-odds.gif" alt="crown-life-odds">
+                                <img src="static/icon/data-tab/odds.gif" alt="odds">
+                            </div>
+                        </div>
+                        <div>
+                            Favorite Matches 
+                            <a class="blue">[Reset All]</a>
+                        </div>
+                        <div>
+                            10/28/2019 (Monday)
+                        </div>
+                        <div>
+                            <div>
+                                <div>
+                                    <img src="static/icon/control/top.gif" alt="top">
+                                    <img src="static/icon/control/plus.gif" alt="plus">
+                                </div>
+                                <div>RUS PR</div>
+                            </div>
+                            <div>22:59</div>
+                            <div>
+                                <img src="static/icon/number/red-1.gif" alt="red-1">
+                                FC Kransdar
+                            </div>
+                            <div><b class="red">1-1</b></div>
+                            <div>
+                                Gazovik Orenburg 
+                                <img src="static/icon/number/yellow-1.gif" alt="yellow-1">
+                            </div>
+                            <div>
+                                <div>12-1</div>
+                                <div class="red">1-1</div>
+                            </div>
+                            <div>
+                                <img src="static/icon/data-tab/1-2-odds.gif" alt="1-2-odds">
+                                <img src="static/icon/data-tab/3-in-1-odds.png" alt="3-in-1-odds">
+                                <img src="static/icon/data-tab/3-in-1-oods-inverted.png" alt="3-in-1-odds-inverted">
+                                <img src="static/icon/data-tab/analyze.gif" alt="analyze">
+                                <img src="static/icon/data-tab/crown-life-odds.gif" alt="crown-life-odds">
+                                <img src="static/icon/data-tab/odds.gif" alt="odds">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main-right">
+                    <div>
+                        <img src="static/icon/control/search.jpg" alt="search-bar">
+                        <input 
+                            placeholder="Quick Search"
+                        ></input>
+                    </div>
+                    <div>
+                        Preferences
+                    </div>
+                    <div>
+                        Font: 
+                        <span>A</span>
+                        <span>A</span>
+                    </div>
+                    <div>
+                        <input type="checkbox">Team-ranking</input>
+                        <input type="checkbox">Text Info</input>
+                        <input type="checkbox">Prompt Window</input>
+                        <input type="checkbox">Card Change Hint</input>
+                        <input type="checkbox">Yellow Card</input>
+                        <input type="checkbox">HT To Show Stats</input>
+                        <input type="checkbox">Sbobet Live Odds</input>
+                        <input type="checkbox">Corner Kicks</input>
+                    </div>
+                    <div>
+                        Hidden <b class="red">0</b> [<a>Show All</a>]
+                    </div>
+                    <div>
+                        Goal Sound <input type="checkbox"></input>
+                    </div>
+                    <div>
+                        Home 
+                        <select>
+                            <option value="sound1">sound1</option>
+                            <option value="sound2">sound2</option>
+                            <option value="sound3">sound3</option>
+                            <option value="sound4">sound4</option>
+                            <option value="none">none</option>
+                        </select>
+                    </div>
+                    <div>
+                        Away 
+                        <select>
+                            <option value="sound1">sound1</option>
+                            <option value="sound2">sound2</option>
+                            <option value="sound3">sound3</option>
+                            <option value="sound4">sound4</option>
+                            <option value="none">none</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Script -->
         <script src="js/script.js"></script>
