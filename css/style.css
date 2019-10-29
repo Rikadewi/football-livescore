@@ -42,6 +42,9 @@ a {
 .red {
     color: #F00;
 }
+.black {
+    color: black !important;
+}
 .dark-red-hover a:hover {
     color: #D00909;
     text-decoration: underline;
@@ -59,7 +62,7 @@ a {
     background-color: #ff6600;
 }
 .orange-background {
-    background-color: #FCEAAB;
+    background-color: #FCEAAB !important;
 }
 .blue-background {
     background-color: #0b79c9;
@@ -145,6 +148,13 @@ header {
 }
 
 /* Index */
+#index .content-row img {
+    height: unset;
+    margin: 0;
+}
+#index .content-row * {
+    border: none;
+}
 #index .content-head {
     font-size: inherit;
 }
@@ -297,9 +307,6 @@ body#index {
 }
 .column-data {
     flex: 15;
-}
-.content-row .column-league {
-    background-color: black;
 }
 
 /* Detail */
@@ -502,4 +509,23 @@ div.column-distribute {
 }
 .right {
     text-align: right;
+}
+
+/* 3 In 1 */
+.content-filter > * {
+    border-right: solid 1px #cccccc;
+    min-width: 48px;
+    line-height: 26px;
+    display: inline-block;
+    text-align: center;
+    padding: 0 2px 0 1px;
+}
+.content-filter {
+    border: solid 1px #cccccc;
+    margin: 5px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.content-filter input {
+    min-width: unset;
 }
