@@ -93,6 +93,7 @@ a {
 }
 .row-red-background {
     background-color: #FF3333;
+    color: white
 }
 .dark-green-background {
     background: rgb(58, 92, 27);
@@ -584,6 +585,10 @@ div.column-distribute {
 .content-filter input {
     min-width: unset;
 }
+.content-filter .current {
+    color: white;
+    background: #3473c7 !important;
+}
 .main-content > div{
     margin-left: 2.5px;
 }
@@ -594,4 +599,30 @@ div.column-distribute {
 #three-in-one .down {
     background: url('../static/over-under/down.png') no-repeat 35px 14px;
     color: green;
+}
+
+/* Referee */
+#referee .main-content .column-1 .content-row div {
+    padding: 0 5px;
+}
+#referee .main-content {
+    align-items: unset;
+}
+#referee .content-filter > *{
+    min-width: unset;
+    padding: 0 5px;
+    border: 1px solid #3473c7;
+    background: #F2FBFF;
+}
+#referee .content-filter {
+    border: 1px solid #3473c7;
+    background: #3473c7;
+}
+#referee .content-data span {
+    border: none;
+    margin: unset;
+}
+.win-rate > div {
+    height: 18px;
+    padding: 1px;
 }
