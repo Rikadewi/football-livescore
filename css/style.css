@@ -17,6 +17,9 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+.bold {
+    font-weight: bold;
+}
 .table-head {
     font-weight: bold;
     background: #efefef;
@@ -43,8 +46,11 @@ a {
     color: #D00909;
     text-decoration: underline;
 }
+.green {
+    color: #349F00 !important;
+}
 .blue {
-    color: blue;
+    color: blue !important;
 }
 .yellow {
     color: #ff0;
@@ -85,6 +91,9 @@ a {
 .dark-green-background {
     background: rgb(58, 92, 27);
     color: white;
+}
+.yellow-background {
+    #FEFFCE
 }
 
 /* Heading */
@@ -325,13 +334,13 @@ body#index {
     font-size: 12px;
 }
 .column-1 {
-    flex: 1;
+    flex: 1 ;
 }
 .column-1-5 {
     flex: 1.5;
 }
 .column-2 {
-    flex: 2;
+    flex: 2 !important;
 }
 .column-3 {
     flex: 3;
@@ -364,6 +373,18 @@ div.row-distribute {
 }
 .row-double {
     line-height: 40px;
+}
+.row-triple {
+    line-height: 60px;
+}
+.row-4 {
+    line-height: 80px;
+}
+.row-5 {
+    line-height: 100px;
+}
+.row-11 {
+    line-height: 220px;
 }
 div.column-distribute {
     display: flex;
@@ -427,6 +448,7 @@ div.column-distribute {
 /* Odds Comp */
 .odds-light-blue-background {
     background-color: #E0E9F6;
+    color: black;
 }
 #odds-comp .content-row div {
     border-right: 1px solid #C6C6C6;
@@ -460,4 +482,24 @@ div.column-distribute {
     color: #333;
     padding: 4px 10px;
     margin: 0 10px;
+}
+
+/* Analysis */
+#match-prediction img {
+    position: relative;
+    top: -12px;
+    left: 375px;
+}
+#match-prediction {
+    justify-content: space-between;
+    padding: 0 10px;
+}
+#current-season img {
+    height: 14px;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
 }
