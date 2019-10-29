@@ -231,7 +231,7 @@ body#index {
 }
 .content-nav a {
     display: inline-block;
-    padding: 0 5px;
+    padding: 0 2px;
     line-height: 28px;
     border: solid 1px #ccc;
     border-radius: 2px 2px 0 0;
@@ -327,6 +327,9 @@ body#index {
 .column-1 {
     flex: 1;
 }
+.column-1-5 {
+    flex: 1.5;
+}
 .column-2 {
     flex: 2;
 }
@@ -382,6 +385,7 @@ div.column-distribute {
 .content-row img {
     height: 19px;
     margin-bottom: -6px;
+    margin-right: 3px;
 }
 
 /* Soccer Match */
@@ -444,4 +448,16 @@ div.column-distribute {
 #odds-comp .content-row img {
     height: 9px;
     margin: 0 5px;
+}
+
+/* Player stats */
+#player-stats .content-head {
+    justify-content: space-between;
+    padding: 0 10px;
+}
+#player-stats .content-head span {
+    border-radius: 4px;
+    color: #333;
+    padding: 4px 10px;
+    margin: 0 10px;
 }
