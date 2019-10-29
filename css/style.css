@@ -308,7 +308,59 @@ body#index {
 .column-data {
     flex: 15;
 }
-
+/* Main right */
+.search input {
+    outline: none;
+    border: none;
+}
+.search input:focus {
+    outline: none;
+    border: none;
+}
+.search {
+    display: flex;
+    border: solid 1px #bbb;
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 5px;
+    align-items: flex-start;
+}
+.font span {
+    background: url("../static/background/gray.gif") repeat-x;
+    border: 1px solid #D1D1D1;
+    margin-right: 7px;
+    display: block;
+    float: left;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.font {
+    align-items: end;
+    margin-top: 2px;
+}
+.font-small {
+    font-size: 12px;
+    margin-left: 2px;
+}
+.font-big {
+    font-size: 14px;
+}
+#main-right select {
+    margin-left: 2px;
+    width: 85px;
+    height: 20px;
+    font-size: 11px;
+    margin-top: 1px;
+}
+.select-sound span {
+    line-height: 20px;
+    width: 40px;
+    display: inline-block;
+}
+#main-right input[type="checkbox"] {
+    margin: -2px 5px 0 0;
+    vertical-align: middle;
+}
 /* Detail */
 .content-top {
     display: flex;
