@@ -42,6 +42,9 @@ a {
 .red {
     color: #F00;
 }
+.white {
+    color: #FFF;
+}
 .black {
     color: black !important;
 }
@@ -580,4 +583,15 @@ div.column-distribute {
 }
 .content-filter input {
     min-width: unset;
+}
+.main-content > div{
+    margin-left: 2.5px;
+}
+#three-in-one .up {
+    background: url('../static/over-under/up.png') no-repeat 35px 14px;
+    color: red;
+}
+#three-in-one .down {
+    background: url('../static/over-under/down.png') no-repeat 35px 14px;
+    color: green;
 }
