@@ -626,3 +626,15 @@ div.column-distribute {
     height: 18px;
     padding: 1px;
 }
+
+/* Live commentary */
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+.section {
+    padding: 15px;
+}
+#live-comment .section {
+    height: 100vh;
+    overflow: scroll;
+}
