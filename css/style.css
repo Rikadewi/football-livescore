@@ -91,7 +91,7 @@ a {
 .row-green-background {
     background-color: #349F00;
 }
-.row-red-background {
+.red-background {
     background-color: #FF3333;
     color: white
 }
@@ -602,19 +602,19 @@ div.column-distribute {
 }
 
 /* Referee */
-#referee .main-content .column-1 .content-row div {
+.main-content-row-distribute .column-1 .content-row div {
     padding: 0 5px;
 }
-#referee .main-content {
+.main-content-row-distribute {
     align-items: unset;
 }
-#referee .content-filter > *{
+.content-filter > *{
     min-width: unset;
     padding: 0 5px;
     border: 1px solid #3473c7;
     background: #F2FBFF;
 }
-#referee .content-filter {
+.content-filter {
     border: 1px solid #3473c7;
     background: #3473c7;
 }
@@ -638,3 +638,5 @@ h1 {
     height: 100vh;
     overflow: scroll;
 }
+
+/* Coaach */
