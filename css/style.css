@@ -396,6 +396,9 @@ body#index {
     display: flex;
     font-size: 12px;
 }
+.column-0-5 {
+    flex: 0.5 ;
+}
 .column-1 {
     flex: 1 ;
 }
@@ -407,6 +410,9 @@ body#index {
 }
 .column-3 {
     flex: 3;
+}
+.column-3-5 {
+    flex: 3.5;
 }
 .column-4 {
     flex: 4;
@@ -640,3 +646,11 @@ h1 {
 }
 
 /* Coaach */
+
+/* 1x2 */
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 960px;
+    background-color: white;
+}
