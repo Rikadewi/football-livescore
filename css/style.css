@@ -8,6 +8,9 @@ body {
     font-size: 11px;
     min-width: 100vh;
 }
+* {
+    box-sizing: border-box;
+}
 section {
     max-width: 960px;
     margin: auto;
@@ -93,15 +96,12 @@ a {
     background-color: #349F00;
 }
 .red-background {
-    background-color: #FF3333;
+    background-color: red !important;
     color: white
 }
 .dark-green-background {
     background: rgb(58, 92, 27);
     color: white;
-}
-.yellow-background {
-    #FEFFCE
 }
 
 /* Heading */
@@ -278,6 +278,7 @@ body#index {
     line-height: 26px;
     justify-content: center;
     font-size: 14px;
+    padding: 0 10px;
 }
 .content-head > div {
     text-align: center;
@@ -545,7 +546,6 @@ div.column-distribute {
 /* Player stats */
 #player-stats .content-head {
     justify-content: space-between;
-    padding: 0 10px;
 }
 #player-stats .content-head span {
     border-radius: 4px;
@@ -670,6 +670,47 @@ h1 {
     margin: 2px 0;
     padding: 4px;
 }
-.navbar-floating .current {
+.navbar-floating a:hover {
     background-color: red;
+    text-decoration: underline;
+}
+
+/* Analysis Setting */
+
+#analysis-setting {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 99;
+    display: none;
+}
+#analysis-setting > div {
+    width: 700px;
+    background-color: white;
+    outline: 2px solid #5885B7;
+}
+#analysis-setting .content-head {
+    justify-content: space-between;
+}
+#analysis-setting .content-body {
+    display: flex;
+}
+#analysis-setting .content-body  > div { 
+    margin: 10px;
+    flex: 1;
+    outline: 2px solid #5885B7;
+    height: 400px;
+}
+.content-analysis > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    border-bottom: 1px dashed gray;
+}
+.button span {
+    margin: 10px;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    border-radius: 3px;
 }

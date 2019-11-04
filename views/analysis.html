@@ -13,6 +13,51 @@
         <link rel="stylesheet" type="text/css" href="../css/style.css">
     </head>
     <body id="analysis">
+        <div id="analysis-setting" class="center">
+            <div>
+                <div class="content-head">
+                    <span>Analysis Data Settings</span>
+                    <a onclick="hideAnalysisSetting()"><i class="fa fa-times"></i></a>
+                </div>
+                <div class="content-body">
+                    <div>
+                        <div class="content-head">
+                            Hided Data
+                        </div>
+                        <div class="content-analysis">
+                            <div>
+                                <span>Live Odds Comparison</span>
+                                <i class="fa fa-angle-double-right"></i>
+                            </div>
+                            <div>
+                                <span>Match Prediction</span>
+                                <i class="fa fa-angle-double-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content-head">
+                            Selected Data
+                        </div>
+                        <div class="content-analysis">
+                            <div>
+                                <span>Standings</span>
+                                <i class="fa fa-times"></i>
+                            </div>
+                            <div>
+                                <span>Head to Head Statistics</span>
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button center">
+                    <span class="gray-background">OK</span>
+                    <span class="gray-background">Default</span>
+                    <span class="gray-background">Cancel</span>
+                </div>
+            </div>
+        </div>
         <section>
             <header>
                 <div class="header-top">
@@ -42,7 +87,7 @@
                 </div>
             </header>
             <div class="navbar-floating">
-                <a class='current' href='analysis.html#'>Setting</a>
+                <a class='red-background' href='analysis.html#' onclick="showAnalysisSetting()">Setting</a>
                 <a href='analysis.html#loc'>LOC</a>
                 <a href='analysis.html#mpre'>MPre</a>
                 <a href='analysis.html#rank'>Rank</a>
@@ -1838,6 +1883,7 @@
             </div>
         </section>
         <!-- Script -->
-        <script src="js/script.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/jquery.min.js"></script>
     </body>
 </html>

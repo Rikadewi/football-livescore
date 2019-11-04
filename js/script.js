@@ -1,4 +1,7 @@
 // Analysis
-function showSettingAnalysis(){
-    $('#analysis-setting').style.display = 'flex';
+function showAnalysisSetting(){
+    $('#analysis-setting').css("display", "flex");
+}
+function hideAnalysisSetting(){
+    $('#analysis-setting').css("display", "none");
 }
